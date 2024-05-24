@@ -1,52 +1,100 @@
 {
-  "git.confirmSync": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.fontSize": 14,
-  "editor.formatOnSave": true,
-  "window.zoomLevel": 0.5,
-  "breadcrumbs.enabled": false,
-  "editor.cursorSurroundingLines": 8,
-  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
-  "vim.highlightedyank.enable": true,
-  "vim.highlightedyank.color": "#a9dc7660",
-  "vim.highlightedyank.duration": 250,
-  "vim.useSystemClipboard": true,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.formatOnSaveMode": "modifications",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "git.suggestSmartCommit": false,
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "git-autoconfig.configList": [
-    {},
-    {
-      "user.email": "kuintwan@gmail.com",
-      "user.name": "Twannafly"
-    }
-  ],
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.suggest.insertMode": "replace",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "editor.linkedEditing": true,
-  "update.showReleaseNotes": false,
-  "zenMode.hideLineNumbers": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "breadcrumbs.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.cursorSurroundingLines": 8,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.lineHeight": 2,
   "editor.lineNumbers": "relative",
-  // "workbench.statusBar.visible": false,
-
-  "vim.leader": "<Space>",
+  "editor.linkedEditing": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+  "git-autoconfig.configList": [
+    {
+      "user.email": "kuintwan@gmail.com",
+      "user.name": "Twannafly"
+    },
+    {
+      "user.email": "tuanbt209@gmail.com",
+      "user.name": "Tuanpep"
+    }
+  ],
+  "git.confirmSync": false,
+  "git.suggestSmartCommit": false,
+  "github.copilot.editor.enableAutoCompletions": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "update.showReleaseNotes": false,
   "vim.hlsearch": true,
+  "vim.highlightedyank.color": "#a9dc7660",
+  "vim.highlightedyank.duration": 250,
+  "vim.highlightedyank.enable": true,
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindings": [
+    // Matchit
+    {
+      "before": ["g", "m"],
+      "commands": ["extension.matchitJumpItems"],
+      "when": "editorTextFocus"
+    },
+    {
+      "before": ["g", "v", "m"],
+      "commands": ["extension.matchitSelectItems"]
+    },
+    {
+      "before": ["g", "p", "d"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "p", "i"],
+      "commands": ["editor.action.peekImplementation"]
+    },
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["g", "p", "t"],
+      "commands": ["editor.action.peekTypeDefinition"]
+    }
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["leader", ","],
@@ -106,6 +154,7 @@
       "commands": ["editor.action.showDefinitionPreviewHover"]
     }
   ],
+  "vim.useSystemClipboard": true,
   "vim.visualModeKeyBindings": [
     // Stay in visual mode while indenting
     { "before": ["<"], "commands": ["editor.action.outdentLines"] },
@@ -118,56 +167,23 @@
       "before": ["leader", "c"],
       "commands": ["editor.action.commentLine"],
       "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "before": ["g", "m"],
+      "commands": ["extension.matchitJumpItems"],
+      "when": "editorTextFocus"
     }
   ],
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["g", "p", "d"],
-      "commands": ["editor.action.peekDefinition"]
-    },
-    {
-      "before": ["g", "h"],
-      "commands": ["editor.action.showDefinitionPreviewHover"]
-    },
-    {
-      "before": ["g", "i"],
-      "commands": ["editor.action.goToImplementation"]
-    },
-    {
-      "before": ["g", "p", "i"],
-      "commands": ["editor.action.peekImplementation"]
-    },
-    {
-      "before": ["g", "q"],
-      "commands": ["editor.action.quickFix"]
-    },
-    {
-      "before": ["g", "r"],
-      "commands": ["editor.action.referenceSearch.trigger"]
-    },
-    {
-      "before": ["g", "t"],
-      "commands": ["editor.action.goToTypeDefinition"]
-    },
-    {
-      "before": ["g", "p", "t"],
-      "commands": ["editor.action.peekTypeDefinition"]
-    },
-    {
-      "before": ["<leader>", "e"],
-      "commands": ["workbench.view.explorer"]
-    },
-    {
-      "before": ["<leader>", "c", "m"],
-      "commands": ["workbench.scm.focus"]
-    }
-  ],
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "window.zoomLevel": 0.5,
   "workbench.activityBar.location": "top",
-  "github.copilot.editor.enableAutoCompletions": false,
-  "editor.lineHeight": 2,
   "workbench.colorTheme": "GitHub Dark Default",
-  "diffEditor.ignoreTrimWhitespace": false
+  "workbench.iconTheme": "material-icon-theme",
+  "zenMode.hideLineNumbers": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "diffEditor.maxComputationTime": 0
 }
